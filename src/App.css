@@ -1,0 +1,573 @@
+*{
+  margin: 0;
+  padding: 0;
+  font-family: 'Alkatra', cursive;
+  font-family: 'Josefin Sans', sans-serif;
+  font-family: 'Poppins', sans-serif;
+  color: #333;
+}
+/**************** navigation *****************/
+nav{
+  display: flex;
+  padding: 1% 6%;
+  justify-content: space-between;
+  align-items: center;
+
+}
+nav .logo{
+  max-width: 40px;
+  height: auto;
+}
+.nav-links{
+  flex: 1;
+  text-align: right;
+
+}
+.nav-links ul li{
+  list-style:none;
+  display: inline-block;
+  padding: 8px 12px;
+}
+.nav-links ul li a{
+  color: #000000;
+  text-decoration: none;
+  font-size: 15px;
+  font-weight: bold;
+
+}
+.nav-links ul li::after{
+  content: '' ;
+  width: 0%;
+  height: 2px;
+  background: #000000;
+  display: block;
+  margin: auto;
+  transition:0.5s;
+}
+.nav-links ul li:hover::after{
+  width:100%
+}
+
+/**************** Mockup Showcase Header *****************/
+.mockup-showcase {
+  display: flex;
+  justify-content: space-around;
+  background-color: black;
+  padding: 40px;
+  box-shadow: 0px 1px 5px rgba(0, 0,0, 0.1);
+}
+.mockup1 {
+  display: flex;
+  flex-direction: row;
+  gap: 3px; 
+}
+
+.mockup1 img {
+  width: 80%; 
+  height: 30vh;
+}
+
+.mobile-res {
+  max-width: 20%; 
+}
+
+.mobile-res img {
+  width: 100%; 
+  max-height: 40vh;
+  height: auto; 
+}
+
+/**************** The Product Description *****************/
+.the-product{
+  box-shadow: 0px 1px 5px rgba(0, 0,0, 0.1);
+  padding: 50px;
+}
+.the-product h1, p{
+  text-align: center;
+  margin: 0 auto 20px auto;
+  width: 60%;
+
+}
+/**************** Tool and Technologies *****************/
+.row {
+  display: flex;
+  /* justify-content: space-around;  */
+  align-items: center;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 40px;
+  background-color: #f4f4f4;
+}
+
+.col {
+  flex: 1;
+  padding: 10px;
+  margin: 0 10px; /* Adjust horizontal margin between columns */
+ 
+}
+
+/* Optional: Add some styling to headings and paragraphs */
+.col h5 {
+  margin-bottom: 10px;
+  font-size: 1.2em;
+  text-align: center;
+}
+
+.col p {
+  margin: 0;
+  color: #555;
+  margin: 0 auto;
+}
+
+/**************** Product Overview *****************/
+.containers{
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 40px;
+  text-align: center;
+}
+.containers h2{
+  margin: 20px;
+}
+.product-overview {
+  display: flex;
+  justify-content: space-around; 
+  align-items: center; /* Center items vertically */
+}
+/**************** Responsibilities & User Research Summary *****************/
+.responsibilty{
+  box-shadow: 0px 1px 5px rgba(0, 0,0, 0.1);
+  padding: 50px;
+}
+.responsibilty h2, p{
+  text-align: center;
+  margin: 0 auto 20px auto;
+  width: 60%;
+}
+
+/**************** User Pain Points, Usability Findings, Accessibility Consideration & Next step  *****************/
+.color{
+  background-color: #f4f4f4;
+}
+.col-findings{
+  margin:40px 30px 40px 30px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 10px;
+  border-radius: 20px;
+  max-width: 30%;
+  max-height: auto;
+}
+.col-findings h5{
+  margin: 15px;
+}
+.col-findings p{
+  margin-top: 15px;
+  text-align: center;
+}
+.one{
+ background-color: #e87373;
+}
+.two{
+  background-color: #bccceb;
+  padding-bottom: 30px ;
+}
+.three{
+  background-color: #aedaaf;
+}
+
+/**************** Personas, UJ map, Sitemap, Paper Wireframe, Papeper Wireframe for mobile *****************/
+.persona{
+  text-align: center;
+  padding: 40px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+.persona img{
+  margin-top: 20px;
+  max-width: 60%;
+  height: auto;
+}
+.persona h4{
+  margin-top: 30px;
+  color: rgb(245, 65, 65);
+}
+.persona p{
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+.UJmap img{
+  max-width: 70%;
+}
+.sitemap img{
+  max-width: 75%;
+}
+.images{
+  display: flex;
+  width: 70%;
+  margin: 0 auto;
+  flex-wrap: wrap;
+}
+.images img{
+  display: flex;
+  margin: 0 auto;
+  padding: 10px;
+  width: 30%; 
+}
+.digital-wireframe img{
+  max-width: 50%;
+}
+.digital-wireframe-mobile .images img {
+  /* margin-top: 20px; */
+  max-width: 30%;
+  height: auto;
+}
+
+.digital-wireframe-mobile .images .img-menu{
+  max-width: 20%;
+  height: 60vh;
+  margin-left: -160px;
+}
+
+/**************** High & Low fidelity prototype *****************/
+.prototype {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px; 
+  text-align: center;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.prototype-info {
+  flex: 1; /* Take up available space */
+  margin-right: 20px; 
+}
+.prototype-image {
+  flex: 1;
+}
+.prototype-info h3,
+.prototype-info p{
+  color: #333;
+  margin-top: 20px;
+}
+
+.prototype-info a {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 10px;
+  text-align: center;
+  color: #ea2b2b;
+  font-weight: bold;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+/**************** USability study:parameter  *****************/
+.usability {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 40px;
+  /* box-shadow: 0 2px 7px rgba(0, 0, 0, 0.1); */
+}
+
+.usability h2 {
+  margin-bottom: 20px;
+}
+
+.parameter {
+  display: grid;
+  grid-template-columns: repeat(2, 4fr);
+  /* gap: 100px;  */
+  align-items: center;
+  padding: 20px;
+}
+
+.group {
+  margin: 20px 100px;
+  padding: 10px;
+}
+
+.group img {
+  width: 30%;
+  height: 45%;
+}
+
+.group h4,
+.group p {
+  color: #333;
+  /* margin-top: 10px; */
+  text-align: center;
+  margin: 10px auto ;
+}
+
+/**************** Iteration Based on usability *****************/
+.iteration {
+  text-align: center;
+  padding: 40px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.iteration h2 {
+  margin-bottom: 20px;
+}
+
+.finding {
+  text-align: center;
+  max-width: 1000px; 
+  margin: 0 auto; 
+}
+.finding h3{
+  color: #ea2b2b;
+  margin: 20px;
+}
+
+.showcasing-changes {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap; 
+}
+
+.usabilities {
+  flex: 1;
+  max-width: 400px; 
+  margin: 20px;
+  color: #ea2b2b;
+}
+
+.usabilities h5 {
+  margin-bottom: 20px;
+}
+hr{
+  font-weight: bold
+}
+.usabilities img {
+  width: 100%;
+  height: auto;
+  /* border-radius: 8px; */
+}
+
+/**************** Takeaways *****************/
+.takeaways {
+  text-align: center;
+  padding: 40px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.takeaways h2 {
+  margin-bottom: 40px;
+}
+
+.takeaways-row {
+  display: flex;
+  flex-direction: row;
+  justify-content: center; 
+  width: 70%;
+  margin: 40px auto;
+}
+.takeaways-col h4 {
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.takeaways-col p {
+  color: #555;
+}
+
+/**************** Thanks section *****************/
+.thanks{
+  text-align: center;
+  padding: 40px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+.thanks h3{
+  margin: 40px auto 40px auto;
+  width: 65%;
+}
+.next-case-study{
+  background-color: #aedaaf;
+  text-decoration: none;
+  border-radius: 20px;
+  padding: 8px 30px;
+  border: 1px solid #aedaaf;
+  font-weight: bold;
+}
+
+
+/**************** Responsiveness using media query *****************/
+nav .icon{
+  display: none;
+}
+@media(max-width: 700px){
+  /**** navigation ****/
+  /* Add these styles to your CSS */
+.nav-links.show {
+  right: 0;
+}
+
+.nav-links.hide {
+  right: -200px;
+}
+
+  .nav-links ul li{
+      display: block;
+  }
+  .nav-links{
+      position: fixed;
+      background: #fefefe;
+      height: 100vh;
+      width: 200px;
+      top: 0;
+      right: -200px;
+      text-align: left;
+      z-index: 2;
+      transition: 1s;
+  }
+  nav .icon{
+      display: block;
+      color: #000000;
+      margin: 10px;
+      font-size: 22px;
+      cursor: pointer;
+      width: 30px;
+      height: auto;
+
+  }
+  .nav-links ul{
+      padding:30px;
+
+  }
+
+  /**** Mockup showcasing ****/
+  .mockup-showcase {
+      flex-direction: column;
+      align-items: center;
+  }
+
+  .mockup1 img {
+      width: 100%;
+      height: 30vh;
+      margin-top: 20px;
+  }
+
+  .mobile-res {
+      max-width: 100%;
+  }
+
+  /**** tool and technologies ****/
+  .row {
+      flex-direction: column;
+      padding: 20px;
+  }
+
+  .col {
+      margin: 10px 0;
+  }
+
+  /**** product overview & user pain points & usability findings ****/
+  .containers {
+      padding: 20px;
+  }
+
+  .product-overview {
+      flex-direction: column;
+  }
+
+  .color {
+      padding: 20px;
+  }
+
+  .col-findings {
+      max-width: 100%;
+  }
+  
+  /**** persona, UJmap, & Sitemap ****/
+  .persona,
+  .UJmap,
+  .sitemap,
+  .images {
+      padding: 20px;
+  }
+
+  .persona img,
+  .UJmap img,
+  .sitemap img,
+  .images img {
+      max-width: 100%;
+  
+  }
+
+  /**** paper wireframe & paper wireframe mobile****/
+  .images{
+      display: flex;
+      max-width: 100%;
+      flex-wrap: wrap;
+  }
+  .images img{
+      display: flex;
+      padding: 10px;
+      width: 100%; 
+  }
+
+  /**** digital wireframe & digital wireframe mobile****/
+  .digital-wireframe img,
+  .digital-wireframe-mobile .images img{
+      max-width: 100%;
+      height: auto;
+  }
+  
+  .digital-wireframe-mobile .images .img-menu{
+      max-width: 100%;
+      height: auto;
+      margin: 0;
+  } 
+
+  /**** low & high fidelity prototype ****/
+  .prototype {
+      flex-direction: column;
+      align-items: center;
+      padding: 20px;
+      display: block;
+  }
+
+  .prototype-image img {
+      margin-top: 20px; 
+      max-width: 100%;
+  }
+
+  /**** Usability study parameter ****/
+  .parameter {
+      grid-template-columns: 1fr;
+  }
+
+  .group {
+      max-width: 100%;
+      align-items: center;
+  }
+
+  /**** iteration based on usability findings ****/
+  .showcasing-changes {
+      flex-direction: column; 
+      align-items: center; 
+  }
+
+  .usabilities {
+      max-width: 100%; 
+  }
+
+  /**** takeaways ****/
+  .takeaways-row {
+      flex-direction: column;
+      align-items: center; 
+  }
+
+  .takeaways-col {
+      margin-top: 10px; 
+  }
+}
+
+
+
+
+
+
+
+
