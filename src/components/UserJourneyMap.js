@@ -1,5 +1,5 @@
 import React from 'react';
-import UJmap from '../assets/UJ map2.jpg'; // Adjust the path accordingly
+import UJmap from '../assets/UJ map2.png'; // Adjust the path accordingly
 
 const  UserJourneyMap= () => {
   return (
