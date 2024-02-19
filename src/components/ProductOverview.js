@@ -6,7 +6,7 @@ const ProductOverview = () => {
         
        {/* Product Description */}
       <section className="the-product">
-        <h1>Restaurant Reservation App</h1>
+        <h1>Restaurant Reservation Website Design</h1>
         <p>
           EatTrek is a restaurant website for people with busy lives who don't like waiting in lines and want to order in their own language. With EatTrek, you can easily reserve tables at your favorite places, order food in your language, and even pick your meal before you arrive. It's perfect for students and professionals who want to enjoy their meals without any hassles.
         </p>
